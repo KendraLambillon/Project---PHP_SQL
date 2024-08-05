@@ -4,6 +4,7 @@
 :root{
     --padding-container: 100px 0;
     --color-title: #001a49;
+    --color-item: #5454d4;
 }
 
 body{
@@ -185,4 +186,99 @@ body{
 .knowledge_img{
     width: 100%;
     display: block;
+}
+
+/*Language*/
+.language{
+    text-align: center;
+}
+
+.language_title{
+    padding-top: 60px;
+}
+
+.language_table{
+    padding-top: 60px;
+}
+
+.language_items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.language_item{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.language_name{
+    font-weight: bold;
+    color: var(--color-item);
+    margin-bottom: 10px;
+}
+
+.discover{
+    color: #001a49;
+    text-decoration: none;
+}
+
+/*Profile*/
+.profile{
+    background-color: #e5e5f7;
+}
+
+.profile_container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.profile_body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.profile_body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.profile_desc{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.profile_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.profile_text{
+    max-width: 700px;
+}
+
+.profile_arrow{
+    width: 90%;
+    cursor: pointer;
 }
